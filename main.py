@@ -1,21 +1,21 @@
 from PyInquirer import prompt, Separator
+from colorama import init, Fore
 import os
+from helpers import github, start_menu
 
 
-def welcome():
-    print('Welcome to BetterGitCLI! \nThis program requires your GitHub access token in order to work properly!'
-          '\n(don`t worry - it will only be stored locally on your device!)')
-    os.environ['TESTING'] = input('Please provide your token -> ')
-
-    if len(os.environ.get('TESTING')) > 1:
-        print('Thank you')
-        print(os.environ.get('TESTING'))
+def cli_main():
+    g = github()
+    if 'GITHUB_AUTH_TOKEN' in os.environ:
+        print(f'Welcome to BetterGitCLI, {g.get_user().name}!')
     else:
-        print('Something went wrong. Please try again')
-        welcome()
+        exit(Fore.RED + 'Could not find your GitHub token. Please export it first in your shell as "GITHUB_AUTH_TOKEN".' + Fore.RESET)
+
+    sm = start_menu()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    welcome()
+    # Init colorama (needed for Windows)
+    init()
+    cli_main()
 
