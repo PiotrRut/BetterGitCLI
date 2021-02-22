@@ -1,6 +1,6 @@
 # BetterGitCLI 
 
-_Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub. _
+> _Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub. _
 
 BetterGitCli is a third party GitHub CLI made with Python, providing extended and easier access to manage your 
 GitHub account directly from your shell.
