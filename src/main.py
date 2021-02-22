@@ -1,7 +1,9 @@
 from PyInquirer import prompt, Separator
 from colorama import init, Fore
 import os
-from helpers import github, start_menu
+from sys import exit
+from options import start_menu
+from helpers import github
 
 
 def cli_main():
