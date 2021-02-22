@@ -86,7 +86,7 @@ def see_repos():
             repo.edit(name=new_name)
             success('Name changed successfully')
         else:
-            error('Error: Name cannot be empty')
+            error('ERROR: Name cannot be empty')
 
     elif repo_answer.get('repo_mng') == 2:
         print(f'Current description: {repo.description}')
@@ -95,7 +95,7 @@ def see_repos():
             repo.edit(description=new_description)
             success('Description changed successfully')
         else:
-            error('Error: Description cannot be empty')
+            error('ERROR: Description cannot be empty')
 
     elif repo_answer.get('repo_mng') == 3:
         print(f'Current URL: {repo.homepage}')
@@ -104,7 +104,7 @@ def see_repos():
             repo.edit(homepage=new_url)
             success('URL changed successfully')
         else:
-            error('Error: URL cannot be empty')
+            error('ERROR: URL cannot be empty')
 
     elif repo_answer.get('repo_mng') == 4:
         print(f'Current visibility: {"private" if repo.private else "public"}')
