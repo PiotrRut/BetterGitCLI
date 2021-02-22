@@ -1,8 +1,7 @@
 from PyInquirer import prompt, Separator
 from sys import exit
-from user import change_user_details
 from repos import see_repos
-
+from user import change_user_details
 
 # Main menu of the application
 def start_menu():
@@ -38,5 +37,3 @@ def start_menu():
 
     if answers.get('main_menu') == 3:
         exit('Exiting now - see you later! 👋🏼')
-
-    return answers

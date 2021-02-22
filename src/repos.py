@@ -1,6 +1,6 @@
-from options import *
-from helpers import *
 from PyInquirer import prompt, Separator
+from helpers import *
+import options
 
 
 def see_repos():
@@ -27,6 +27,8 @@ def see_repos():
         ))
         return repos
 
+    # CHOOSE A REPOSITORY TO MANAGE
+
     question = {
         'type': 'list',
         'name': 'repo',
@@ -34,15 +36,18 @@ def see_repos():
         'choices': get_repos_as_options()
     }
 
-    list_answer = prompt(question)
+    repo_list_answer = prompt(question)
 
-    if list_answer.get('repo') == 1:
-        start_menu()
+    if repo_list_answer.get('repo') == 1:
+        options.start_menu()
 
-    elif list_answer.get('repo') == 2:
+    elif repo_list_answer.get('repo') == 2:
         exit('Exiting now - see you later! 👋🏼')
 
-    repo = github().get_repo(list_answer.get('repo'))
+    repo = github().get_repo(repo_list_answer.get('repo'))
+
+    # WHAT TO DO WITH CHOSE REPO
+    # (at this point the user have chosen one from list)
 
     question2 = {
         'type': 'list',
@@ -65,14 +70,18 @@ def see_repos():
                 'name': 'Change visibility',
                 'value': 4
             },
+            {
+                'name': 'Change default branch',
+                'value': 5
+            },
             Separator(),
             {
                 'name': 'Return to main menu',
-                'value': 5
+                'value': 6
             },
             {
                 'name': 'Exit to shell',
-                'value': 6
+                'value': 7
             }
         ]
     }
@@ -107,7 +116,7 @@ def see_repos():
             error('ERROR: URL cannot be empty')
 
     elif repo_answer.get('repo_mng') == 4:
-        print(f'Current visibility: {"private" if repo.private else "public"}')
+        print(f'Current visibility: {"Private" if repo.private else "Public"}')
         question3 = {
             'type': 'list',
             'name': 'vis',
@@ -128,9 +137,21 @@ def see_repos():
         success('Visibility changed successfully')
 
     elif repo_answer.get('repo_mng') == 5:
-        start_menu()
+        print(f'Current default branch: ')
+        print(f'Available branches: {[i.name for i in repo.get_branches()]}')
+        new_branch = input('Please provide the new default branch: ')
+        if new_branch:
+            repo.edit(default_branch=new_branch)
+            success('Default branch changed successfully')
+        else:
+            error('ERROR: Branch name cannot be empty')
 
+    # Back to menu
     elif repo_answer.get('repo_mng') == 6:
+        options.start_menu()
+
+    # Exit the app
+    elif repo_answer.get('repo_mng') == 7:
         exit('Exiting now - see you later! 👋🏼')
 
     see_repos()

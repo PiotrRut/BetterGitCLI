@@ -10,9 +10,9 @@ def cli_main():
     if 'GITHUB_AUTH_TOKEN' in os.environ:
         print(f'Welcome to BetterGitCLI, {g.get_user().name}!')
     else:
-        exit(Fore.RED + 'ERROR: Could not find your GitHub token. Please export it first in your shell as "GITHUB_AUTH_TOKEN".' + Fore.RESET)
+        exit(Fore.RED + 'ERROR: Could not find your GitHub token. \nPlease export it first in your shell as "GITHUB_AUTH_TOKEN".' + Fore.RESET)
 
-    start_menu()
+    sm = start_menu()
 
 
 if __name__ == '__main__':

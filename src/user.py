@@ -1,13 +1,13 @@
-from options import *
-from helpers import *
 from PyInquirer import Separator, prompt
+from helpers import *
+import options
 
 
 def change_user_details():
 
     git_user = github().get_user()
 
-    options = [
+    list_options = [
         {
             'type': 'list',
             'name': 'user_mng',
@@ -38,7 +38,7 @@ def change_user_details():
         }
     ]
 
-    answers = prompt(options)
+    answers = prompt(list_options)
 
     if answers.get('user_mng') == 1:
         print(f'Current location: {git_user.location}')
@@ -68,7 +68,7 @@ def change_user_details():
             error('Error: URL cannot be empty')
 
     elif answers.get('user_mng') == 4:
-        start_menu()
+        options.start_menu()
 
     elif answers.get('user_mng') == 5:
         exit('Exiting now - see you later! 👋🏼')
