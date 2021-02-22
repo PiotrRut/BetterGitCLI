@@ -1,4 +1,4 @@
-# BetterGitCLI 
+![Group 1(2)](https://user-images.githubusercontent.com/43642399/108777456-bab79800-755b-11eb-8325-7904e0face0f.png)
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
 
