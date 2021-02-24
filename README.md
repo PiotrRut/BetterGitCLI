@@ -30,7 +30,12 @@ The following need to be installed on your machine in addition to Python 3 in or
 
 - `PyInquirer` - [download](https://pypi.org/project/PyInquirer/) (pypi.org)
 - `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
-- `colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
+- `Colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
+
+This can be done easily using the provided `requirements.txt` file by running this in the project root :point_down:
+```bash
+$ python -m pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -47,10 +52,11 @@ using <kbd>Enter</kbd>. You can also exit the program at any time by using the <
 or by choosing the _"Exit to shell"_ option.
 
 Via the UI, you can view all your repositories, manage branches and deployments, manage your
-personal user details and much more! Current functions include:
+personal user details and much more! **Current functions include**:
 
 - Repository management
     - View and edit repository details, such as the description, default branches, visibility and more!
+    - Delete repositories
 - User management
     - View and edit your personal details like your name, location and website URL
 - SSH keys management
@@ -59,4 +65,4 @@ personal user details and much more! Current functions include:
 ## Contributing
 
 All contributions to add new features, fix any bugs (if you spot any) or make the code better or more efficient
-are more than welcome - please feel free to open up a pull request!
+are more than welcome - please feel free raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) to open up a pull request!
