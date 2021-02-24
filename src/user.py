@@ -29,14 +29,18 @@ def change_user_details():
                     'name': 'Change my website URL',
                     'value': 3
                 },
+                {
+                    'name': 'Change my bio',
+                    'value': 4
+                },
                 Separator(),
                 {
                     'name': 'Return to main menu',
-                    'value': 4
+                    'value': 5
                 },
                 {
                     'name': 'Exit to shell',
-                    'value': 5
+                    'value': 6
                 }
             ]
         }
@@ -72,9 +76,18 @@ def change_user_details():
             error('Error: URL cannot be empty')
 
     elif answers.get('user_mng') == 4:
-        options.start_menu()
+        print(f'Current bio: {git_user.bio}')
+        new_bio = input('Please provide your new bio: ')
+        if new_bio:
+            git_user.edit(bio=new_bio)
+            success('Bio updated successfully')
+        else:
+            error('Error: Bio cannot be empty')
 
     elif answers.get('user_mng') == 5:
+        options.start_menu()
+
+    elif answers.get('user_mng') == 6:
         exit('Exiting now - see you later! 👋🏼')
 
     change_user_details()
