@@ -47,7 +47,7 @@ def manage_ssh_keys():
             manage_ssh_keys()
         else:
             for key in git_user.get_keys():
-                print('Showing SSH keys...')
+                print('Getting your SSH keys...')
                 print(f'KEY: {key.key} / ID: {key.id} / NAME: {key.title}')
 
     if answers.get('ssh_keys') == 2:
@@ -77,7 +77,7 @@ def manage_ssh_keys():
             question = {
                 'type': 'list',
                 'name': 'delete_key',
-                'message': 'Choose a key to delete',
+                'message': 'Choose a key to delete down below.',
                 'choices': keys
             }
 

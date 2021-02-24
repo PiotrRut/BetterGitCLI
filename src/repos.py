@@ -97,8 +97,7 @@ def see_repos():
     repo_answer = prompt(question2)
 
     if repo_answer.get('repo_mng') == 1:
-        print(f'Current name: {repo.name}')
-        new_name = input('Please provide a new name: ')
+        new_name = input(f'Please provide a new name for {repo.name}: ')
         if new_name:
             repo.edit(name=new_name)
             success('Name changed successfully')

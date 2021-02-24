@@ -55,16 +55,15 @@ def change_user_details():
             git_user.edit(location=new_location)
             success('Location changed successfully')
         else:
-            error('Error: location cannot be empty')
+            error('ERROR: Location cannot be empty')
 
     elif answers.get('user_mng') == 2:
-        print(f'Current name: {git_user.name}')
-        new_name = input('Please provide a new name: ')
+        new_name = input(f'{git_user.name}, please provide a new name for your profile: ')
         if new_name:
             git_user.edit(name=new_name)
             success('Name changed successfully')
         else:
-            error('Error: name cannot be empty')
+            error('ERROR: Name cannot be empty')
 
     elif answers.get('user_mng') == 3:
         print(f'Current website URL: {git_user.blog}')
@@ -73,7 +72,7 @@ def change_user_details():
             git_user.edit(blog=new_url)
             success('Website URL changed successfully')
         else:
-            error('Error: URL cannot be empty')
+            error('ERROR: URL cannot be empty')
 
     elif answers.get('user_mng') == 4:
         print(f'Current bio: {git_user.bio}')
@@ -82,7 +81,7 @@ def change_user_details():
             git_user.edit(bio=new_bio)
             success('Bio updated successfully')
         else:
-            error('Error: Bio cannot be empty')
+            error('ERROR: Bio cannot be empty')
 
     elif answers.get('user_mng') == 5:
         options.start_menu()
