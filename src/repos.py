@@ -145,7 +145,7 @@ def see_repos():
         success('Visibility changed successfully')
 
     elif repo_answer.get('repo_mng') == 5:
-        print(f'Current default branch: ')
+        print(f'Current default branch: {repo.default_branch}')
         print(f'Available branches: {[i.name for i in repo.get_branches()]}')
         new_branch = input('Please provide the new default branch: ')
         if new_branch:
