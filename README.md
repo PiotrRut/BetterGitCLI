@@ -1,5 +1,11 @@
 ![BannerImg](https://user-images.githubusercontent.com/43642399/108777456-bab79800-755b-11eb-8325-7904e0face0f.png)
 
+<p align="center">
+    <a href="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml">
+        <img src="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml/badge.svg" />
+    </a>
+</p>
+
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
 
 BetterGitCli is a third party GitHub CLI made with Python, providing easier access to managing your
