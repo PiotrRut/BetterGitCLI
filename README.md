@@ -32,7 +32,8 @@ The following need to be installed on your machine in addition to Python 3 in or
 - `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
 - `Colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
 
-This can be done easily using the provided `requirements.txt` file by running this in the project root :point_down:
+This can be done easily using the provided `requirements.txt` file by running this in the project root :point_down:  
+(Make sure [pip is installed](https://pip.pypa.io/en/latest/installing/)!)
 ```bash
 $ python -m pip install -r requirements.txt
 ```
