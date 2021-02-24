@@ -13,7 +13,7 @@ GitHub account directly from your shell with simple and intuitive UI. It's based
 
 ## Configuration
 
-See below for instructions on how to configure BetterGitCLI.
+See below for instructions on how to configure BetterGitCLI. Not that Python 3 is required to run this program.
 
 ### GitHub access
 
@@ -28,11 +28,11 @@ your token, export it as an environmental variable in your shell :point_down:
 $ export GITHUB_AUTH_TOKEN=<token>
 ```
 
-:rotating_light: BetterGitCLI will never store your access token, and it will *only* be stored locally on your machine.
+:rotating_light: BetterGitCLI will never store your access token, and it will *only be stored locally* on your machine.
 
 ### Dependencies
 
-The following need to be installed on your machine in addition to Python 3 in order to run this program:
+The following need to be installed on your machine in order to run this program:
 
 - `PyInquirer` - [download](https://pypi.org/project/PyInquirer/) (pypi.org)
 - `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
@@ -64,11 +64,11 @@ personal user details and much more! **Current functions include**:
     - View and edit repository details, such as the description, default branches, visibility and more!
     - Delete repositories
 - User management
-    - View and edit your personal details like your name, location and website URL
+    - View and edit your personal details like your name, location or bio
 - SSH keys management
     - View and delete SSH keys linked to your GitHub account
 
 ## Contributing
 
 All contributions to add new features, fix any bugs (if you spot any) or make the code better or more efficient
-are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) to open up a pull request!
+are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) or open up a pull request!
