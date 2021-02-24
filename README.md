@@ -38,8 +38,7 @@ The following need to be installed on your machine in addition to Python 3 in or
 - `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
 - `Colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
 
-This can be done easily using the provided `requirements.txt` file by running this in the project root :point_down:  
-(Make sure [pip is installed](https://pip.pypa.io/en/latest/installing/)!)
+This can be done easily using the provided `requirements.txt` file by running this in the project root :point_down:
 ```bash
 $ python -m pip install -r requirements.txt
 ```
@@ -72,4 +71,4 @@ personal user details and much more! **Current functions include**:
 ## Contributing
 
 All contributions to add new features, fix any bugs (if you spot any) or make the code better or more efficient
-are more than welcome - please feel free raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) to open up a pull request!
+are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) to open up a pull request!
