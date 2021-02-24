@@ -1,3 +1,7 @@
+"""
+Various helper functions used through out the application
+"""
+
 from github import Github
 from colorama import Fore
 import os

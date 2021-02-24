@@ -1,3 +1,7 @@
+"""
+All the functions and menus for managing user details and settings
+"""
+
 from PyInquirer import Separator, prompt
 from helpers import *
 import options

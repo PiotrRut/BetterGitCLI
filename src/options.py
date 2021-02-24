@@ -1,7 +1,12 @@
+"""
+Main menu of the app with all the available options
+"""
+
 from PyInquirer import prompt, Separator
 from sys import exit
 from repos import see_repos
 from user import change_user_details
+
 
 # Main menu of the application
 def start_menu():

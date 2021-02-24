@@ -1,9 +1,9 @@
-![Group 1(2)](https://user-images.githubusercontent.com/43642399/108777456-bab79800-755b-11eb-8325-7904e0face0f.png)
+![BannerImg](https://user-images.githubusercontent.com/43642399/108777456-bab79800-755b-11eb-8325-7904e0face0f.png)
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
 
 BetterGitCli is a third party GitHub CLI made with Python, providing easier access to managing your
-GitHub account directly from your shell with simple and intuitive UI. It' based on `PyGithub` which is a wrapper library around the official GitHub REST API.
+GitHub account directly from your shell with simple and intuitive UI. It's based on `PyGithub` which is a wrapper library around the official GitHub REST API.
 
 ## Configuration
 
@@ -22,7 +22,7 @@ your token, export it as an environmental variable in your shell :point_down:
 $ export GITHUB_AUTH_TOKEN=<token>
 ```
 
-:rotating*light: BetterGitCLI will never store your access token, and it will \_only* be stored locally on your machine.
+:rotating_light: BetterGitCLI will never store your access token, and it will *only* be stored locally on your machine.
 
 ### Dependencies
 

@@ -1,3 +1,7 @@
+"""
+All the functions and menus for managing user repositories
+"""
+
 from PyInquirer import prompt, Separator
 from helpers import *
 import options
