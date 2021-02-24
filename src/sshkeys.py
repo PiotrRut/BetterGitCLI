@@ -55,13 +55,13 @@ def manage_ssh_keys():
             print('You do not have any keys configured.')
             manage_ssh_keys()
         else:
-            repos = []
+            keys = []
             for key in git_user.get_keys():
-                repos.append({
+                keys.append({
                     'name': f'KEY: {key.key} / ID: {key.id} / NAME: {key.title}',
                     'value': key.id
                 })
-            repos.extend((
+            keys.extend((
                 Separator(),
                 {
                     'name': 'Return to main menu',
@@ -78,7 +78,7 @@ def manage_ssh_keys():
                 'type': 'list',
                 'name': 'delete_key',
                 'message': 'Choose a key to delete',
-                'choices': repos
+                'choices': keys
             }
 
             ssh_delete = prompt(question)
@@ -94,7 +94,7 @@ def manage_ssh_keys():
 
             if warning_answer.get('continue') is True:
                 git_user.get_key(ssh_delete.get('delete_key')).delete()
-                success(f'Key with ID {key.id} successfully deleted.')
+                success(f'Key with ID {ssh_delete.get("delete_key")} successfully deleted.')
             else:
                 manage_ssh_keys()
 
