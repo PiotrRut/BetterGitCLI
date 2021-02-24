@@ -13,7 +13,7 @@ GitHub account directly from your shell with simple and intuitive UI. It's based
 
 ## Configuration
 
-See below for instructions on how to configure BetterGitCLI. Not that Python 3 is required to run this program.
+See below for instructions on how to configure BetterGitCLI. Note that Python 3 is required to run this program.
 
 ### GitHub access
 
