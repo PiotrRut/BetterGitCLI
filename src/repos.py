@@ -78,14 +78,18 @@ def see_repos():
                 'name': 'Change default branch',
                 'value': 5
             },
+            {
+                'name': 'Delete this repository',
+                'value': 6
+            },
             Separator(),
             {
                 'name': 'Return to main menu',
-                'value': 6
+                'value': 7
             },
             {
                 'name': 'Exit to shell',
-                'value': 7
+                'value': 8
             }
         ]
     }
@@ -150,12 +154,24 @@ def see_repos():
         else:
             error('ERROR: Branch name cannot be empty')
 
-    # Back to menu
     elif repo_answer.get('repo_mng') == 6:
+        warning = {
+            'type': 'confirm',
+            'message': f'Are you sure you want to delete {repo.name}? This is irreversible!',
+            'name': 'continue',
+            'default': True,
+        }
+        delete_answer = prompt(warning)
+        if delete_answer.get('continue') is True:
+            github().get_repo(repo.id).delete()
+            success(f'{repo.name} successfully deleted!')
+
+    # Back to menu
+    elif repo_answer.get('repo_mng') == 7:
         options.start_menu()
 
     # Exit the app
-    elif repo_answer.get('repo_mng') == 7:
+    elif repo_answer.get('repo_mng') == 8:
         exit('Exiting now - see you later! 👋🏼')
 
     see_repos()

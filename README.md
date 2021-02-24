@@ -47,7 +47,14 @@ using <kbd>Enter</kbd>. You can also exit the program at any time by using the <
 or by choosing the _"Exit to shell"_ option.
 
 Via the UI, you can view all your repositories, manage branches and deployments, manage your
-personal user details and much more!
+personal user details and much more! Current functions include:
+
+- Repository management
+    - View and edit repository details, such as the description, default branches, visibility and more!
+- User management
+    - View and edit your personal details like your name, location and website URL
+- SSH keys management
+    - View and delete SSH keys linked to your GitHub account
 
 ## Contributing
 
