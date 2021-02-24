@@ -6,6 +6,7 @@ from PyInquirer import prompt, Separator
 from sys import exit
 from repos import see_repos
 from user import change_user_details
+from sshkeys import manage_ssh_keys
 
 
 # Main menu of the application
@@ -24,10 +25,14 @@ def start_menu():
                 'name': 'Manage my personal details',
                 'value': 2
             },
+            {
+                'name': 'View and delete my SSH keys',
+                'value': 3
+            },
             Separator(),
             {
                 'name': 'Exit to shell',
-                'value': 3
+                'value': 4
             },
         ]
     }
@@ -41,4 +46,7 @@ def start_menu():
         change_user_details()
 
     if answers.get('main_menu') == 3:
+        manage_ssh_keys()
+
+    if answers.get('main_menu') == 4:
         exit('Exiting now - see you later! 👋🏼')

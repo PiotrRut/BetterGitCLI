@@ -14,7 +14,7 @@ See below for instructions on how to configure BetterGitCLI.
 In order to gain access to your GitHub account you will need to authenticate with your GitHub access token. You can find instructions
 on how to obtain it [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
-Your token must grant access to _"repo"_, _"user"_ and _"delete_repo"_. After generating
+Your token must grant access to _"repo"_, _"user"_, _"delete_repo"_ and _"admin:public_key"_. After generating
 your token, export it as an environmental variable in your shell :point_down:
 
 ```bash
