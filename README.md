@@ -5,6 +5,10 @@
         <img src="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml/badge.svg" />
     </a>
     <img src="https://travis-ci.com/PiotrRut/BetterGitCLI.svg?token=WYp4pRfPB9puZwpAYdtc&branch=master" />
+    <img src="https://img.shields.io/pypi/pyversions/bettergitcli">
+    <a href="https://pypi.org/project/bettergitcli/">
+      <img src="https://img.shields.io/pypi/v/bettergitcli">
+    </a>
 </p>
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
@@ -22,18 +26,21 @@ In order to gain access to your GitHub account you will need to authenticate wit
 on how to obtain it [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 Your token must grant access to _"repo"_, _"user"_, _"delete_repo"_ and _"admin:public_key"_. After generating
-your token, export it as an environmental variable in your shell :point_down:
+your token, export it as an environmental variable in your shell 👇🏻
 
 ```bash
-# Name must match!
+# bash / zsh
 $ export GITHUB_AUTH_TOKEN=<token>
+
+# powershell
+$env:GITHUB_AUTH_TOKEN = "token"
 ```
 
-:rotating_light: BetterGitCLI will never store your access token, and it will *only be stored locally* on your machine.
+🚨 BetterGitCLI will never store your access token, and it will *only be stored locally* on your machine.
 
 ### Installation
 You can either install this program using `pip`, or clone it and run locally with Python. Click on one of the 
-options down below to reveal the instructions :point_down:
+options down below to reveal the instructions 👇🏻
 
 <details open>
   <summary><i><b>Install package with pip (preferred)</b></i></summary>
@@ -42,7 +49,7 @@ options down below to reveal the instructions :point_down:
   download and install BetterGitCLI using this command:
 
   ```bash
-  $ pip install BetterGitCLI
+  $ pip install bettergitcli
   ```
 
   After installation, you can run it from anywhere in your shell:
