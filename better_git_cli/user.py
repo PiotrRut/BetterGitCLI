@@ -3,8 +3,8 @@ All the functions and menus for managing user details and settings
 """
 
 from PyInquirer import Separator, prompt
-from helpers import *
-import options
+from better_git_cli.helpers import *
+import better_git_cli.options as options
 
 
 def change_user_details():

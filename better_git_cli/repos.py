@@ -3,8 +3,8 @@ All the functions and menus for managing user repositories
 """
 
 from PyInquirer import prompt, Separator
-from helpers import *
-import options
+from better_git_cli.helpers import *
+import better_git_cli.options as options
 
 
 def see_repos():

@@ -1,5 +1,5 @@
-from options import start_menu
-from helpers import github
+from better_git_cli.options import start_menu
+from better_git_cli.helpers import github
 from colorama import init, Fore
 import os
 from sys import exit

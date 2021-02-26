@@ -3,8 +3,8 @@ All the functions and menus for managing and deleting user's SSH keys
 """
 
 from PyInquirer import Separator, prompt
-from helpers import *
-import options
+from better_git_cli.helpers import *
+import better_git_cli.options as options
 
 
 def manage_ssh_keys():

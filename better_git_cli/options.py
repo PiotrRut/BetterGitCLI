@@ -4,9 +4,9 @@ Main menu of the app with all the available options
 
 from PyInquirer import prompt, Separator
 from sys import exit
-from repos import see_repos
-from user import change_user_details
-from sshkeys import manage_ssh_keys
+from better_git_cli.repos import see_repos
+from better_git_cli.user import change_user_details
+from better_git_cli.sshkeys import manage_ssh_keys
 
 
 # Main menu of the application
