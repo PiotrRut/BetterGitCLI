@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "BetterGitCLI"
-version = "1.0.1"
+version = "1.0.2"
 description = "GitHub CLI with intuitive UI and keyboard controls!"
 authors = ["Piotr Rutkowski"]
 license = "GPL-3.0-only"
