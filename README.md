@@ -4,7 +4,7 @@
     <a href="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml">
         <img src="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml/badge.svg" />
     </a>
-    <img src="https://travis-ci.com/PiotrRut/BetterGitCLI.svg?branch=master" />
+    <img src="https://travis-ci.com/PiotrRut/BetterGitCLI.svg?token=WYp4pRfPB9puZwpAYdtc&branch=master" />
 </p>
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
