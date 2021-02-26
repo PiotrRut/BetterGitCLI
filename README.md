@@ -4,6 +4,7 @@
     <a href="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml">
         <img src="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml/badge.svg" />
     </a>
+    <img src="https://travis-ci.com/PiotrRut/BetterGitCLI.svg?branch=master" />
 </p>
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
@@ -13,7 +14,7 @@ GitHub account directly from your shell with simple and intuitive UI. It's based
 
 ## Configuration
 
-See below for instructions on how to configure BetterGitCLI. Note that Python 3 is required to run this program.
+See below for instructions on how to configure BetterGitCLI. Note that Python 3.6 or higher is required to run this program.
 
 ### GitHub access
 
@@ -24,35 +25,60 @@ Your token must grant access to _"repo"_, _"user"_, _"delete_repo"_ and _"admin:
 your token, export it as an environmental variable in your shell :point_down:
 
 ```bash
-# It is important that the name is the same
+# Name must match!
 $ export GITHUB_AUTH_TOKEN=<token>
 ```
 
 :rotating_light: BetterGitCLI will never store your access token, and it will *only be stored locally* on your machine.
 
-### Dependencies
+### Installation
+You can either install this program using `pip`, or clone it and run locally with Python. Click on one of the 
+options down below to reveal the instructions :point_down:
 
-The following need to be installed on your machine in order to run this program:
+<details open>
+  <summary><i><b>Install package with pip (preferred)</b></i></summary>
+  
+  This is the absolute easiest way to get started with BetterGitCLI! If you have `pip` installed, you can 
+  download and install BetterGitCLI using this command:
 
-- `PyInquirer` - [download](https://pypi.org/project/PyInquirer/) (pypi.org)
-- `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
-- `Colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
+  ```bash
+  $ pip install BetterGitCLI
+  ```
 
-This can be done easily using the provided `requirements.txt` file by running this in the project root :point_down:
-```bash
-$ python -m pip install -r requirements.txt
-```
+  After installation, you can run it from anywhere in your shell:
+  
+  ```bash
+  $ bettergitcli
+  ```
+</details>
+
+<details>
+  <summary><i><b>Clone and run locally with Python</b></i></summary>
+
+  If you prefer to clone this repository and run BetterGitCLI locally using your Python interpreter, you can
+  do that as well. 
+  
+  Just remember that these dependencies need to be installed in order for this program
+  to run:
+  
+  - `PyInquirer` - [download](https://pypi.org/project/PyInquirer/) (pypi.org)
+  - `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
+  - `Colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
+  
+  This can be done easily using the provided `requirements.txt` file by running this in the project root:
+  ```bash
+  $ pip install -r requirements.txt
+  ```
+  
+  After installation, run the program inside the `/better_git_cli` directory:
+
+  ```bash
+  $ python main.py
+  ```
+</details>
+
 
 ## Usage
-
-Run the application inside the `/src` directory :point_down:
-
-```bash
-$ python main.py
-```
-
----
-
 To navigate the UI, use your arrow keys (up and down) and select options
 using <kbd>Enter</kbd>. You can also exit the program at any time by using the <kbd>^C</kbd> (<kbd>Ctrl+C</kbd>) combination,
 or by choosing the _"Exit to shell"_ option.
@@ -67,8 +93,11 @@ personal user details and much more! **Current functions include**:
     - View and edit your personal details like your name, location or bio
 - SSH keys management
     - View and delete SSH keys linked to your GitHub account
+  
+
+## Changelog
+You can view the changelog [here](https://github.com/PiotrRut/BetterGitCLI/blob/master/CHANGELOG.md).
 
 ## Contributing
-
 All contributions to add new features, fix any bugs (if you spot any) or make the code better or more efficient
 are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) or open up a pull request!

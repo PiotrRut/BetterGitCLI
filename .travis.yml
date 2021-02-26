@@ -1,0 +1,17 @@
+language: python
+dist: xenial
+before_install:
+  - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+  - source $HOME/.poetry/env
+install:
+  - poetry install
+script:
+  - poetry build
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: poetry publish --username $PYPI_USER_NAME --password $PYPI_TOKEN
+    on:
+      branch: master
+      python: '3.6'
+      tags: true

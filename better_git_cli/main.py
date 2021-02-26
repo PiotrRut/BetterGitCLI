@@ -1,8 +1,8 @@
+from options import start_menu
+from helpers import github
 from colorama import init, Fore
 import os
 from sys import exit
-from options import start_menu
-from helpers import github
 
 
 def cli_main():

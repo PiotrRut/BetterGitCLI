@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "BetterGit"
+version = "1.0.0"
+description = "GitHub CLI with intuitive UI and keyboard controls!"
+authors = ["Piotr Rutkowski"]
+license = "GPL-3.0-only"
+repository = "https://github.com/PiotrRut/BetterGitCLI"
+homepage = "https://github.com/PiotrRut/BetterGitCLI"
+readme = "README.md"
+
+
+packages = [
+    { include = "better_git_cli" },
+    { include = "better_git_cli/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+PyGithub = "*"
+colorama = "*"
+PyInquirer = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bettergitcli = 'better_git_cli.main:cli_main'
