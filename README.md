@@ -39,38 +39,36 @@ $env:GITHUB_AUTH_TOKEN = "token"
 🚨 BetterGitCLI will never store your access token, and it will *only be stored locally* on your machine.
 
 ### Installation
-You can either install this program using `pip`, or clone it and run locally with Python. Click on one of the 
+You can either install this program using [pip](https://pip.pypa.io/en/stable/installing/) or [pipenv](https://pipenv.pypa.io/en/latest/), or clone it and run locally with Python. Click on one of the 
 options down below to reveal the instructions 👇🏻
 
 <details open>
   <summary><i><b>Install package with pip (preferred)</b></i></summary>
-  
-  This is the absolute easiest way to get started with BetterGitCLI! If you have `pip` installed, you can 
-  download and install BetterGitCLI using this command:
+  <p>
+    
+  Install BetterGitCLI using this command:
 
   ```bash
   $ pip install bettergitcli
   ```
 
-  After installation, you can run it from anywhere in your shell:
-  
+  After installation, you can run it from anywhere in your shell 🎉
+
   ```bash
   $ bettergitcli
   ```
+  
+  </p>
 </details>
 
 <details>
   <summary><i><b>Clone and run locally with Python</b></i></summary>
-
+  <p>
+  
   If you prefer to clone this repository and run BetterGitCLI locally using your Python interpreter, you can
-  do that as well. 
+  do that as well. Just remember that in this case you will have to install these dependencies manually:
   
-  Just remember that these dependencies need to be installed in order for this program
-  to run:
-  
-  - `PyInquirer` - [download](https://pypi.org/project/PyInquirer/) (pypi.org)
-  - `PyGithub` - [download](https://pypi.org/project/PyGithub/) (pypi.org)
-  - `Colorama` - [download](https://pypi.org/project/colorama/) (pypi.org)
+  - *PyInquirer, PyGithub, colorama*
   
   This can be done easily using the provided `requirements.txt` file by running this in the project root:
   ```bash
@@ -82,6 +80,8 @@ options down below to reveal the instructions 👇🏻
   ```bash
   $ python main.py
   ```
+  
+  </p>
 </details>
 
 
@@ -107,4 +107,4 @@ You can view the changelog [here](https://github.com/PiotrRut/BetterGitCLI/blob/
 
 ## Contributing
 All contributions to add new features, fix any bugs (if you spot any) or make the code better or more efficient
-are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) or open up a pull request!
+are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) or open up a pull request 💫
