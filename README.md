@@ -5,7 +5,7 @@
         <img src="https://github.com/PiotrRut/BetterGitCLI/actions/workflows/codeql-analysis.yml/badge.svg" />
     </a>
     <img src="https://travis-ci.com/PiotrRut/BetterGitCLI.svg?token=WYp4pRfPB9puZwpAYdtc&branch=master" />
-    <img src="https://img.shields.io/pypi/pyversions/bettergitcli">
+    <img src="https://img.shields.io/badge/python-3.6%20%2B-blue">
     <a href="https://pypi.org/project/bettergitcli/">
       <img src="https://img.shields.io/pypi/v/bettergitcli">
     </a>
@@ -39,13 +39,13 @@ $env:GITHUB_AUTH_TOKEN = "token"
 🚨 BetterGitCLI will never store your access token, and it will *only be stored locally* on your machine.
 
 ### Installation
-You can either install this program using [pip](https://pip.pypa.io/en/stable/installing/) or [pipenv](https://pipenv.pypa.io/en/latest/), or clone it and run locally with Python. Click on one of the 
+You can either install this program using [pip](https://pip.pypa.io/en/stable/installing/) or [pipenv](https://pipenv.pypa.io/en/latest/), or clone it and run locally with Python. Click on one of the
 options down below to reveal the instructions 👇🏻
 
 <details open>
   <summary><i><b>Install package with pip (preferred)</b></i></summary>
   <p>
-    
+
   Install BetterGitCLI using this command:
 
   ```bash
@@ -57,30 +57,30 @@ options down below to reveal the instructions 👇🏻
   ```bash
   $ bettergitcli
   ```
-  
+
   </p>
 </details>
 
 <details>
   <summary><i><b>Clone and run locally with Python</b></i></summary>
   <p>
-  
+
   If you prefer to clone this repository and run BetterGitCLI locally using your Python interpreter, you can
   do that as well. Just remember that in this case you will have to install these dependencies manually:
-  
+
   - *PyInquirer, PyGithub, colorama*
-  
+
   This can be done easily using the provided `requirements.txt` file by running this in the project root:
   ```bash
   $ pip install -r requirements.txt
   ```
-  
+
   After installation, run the program inside the `/better_git_cli` directory:
 
   ```bash
   $ python main.py
   ```
-  
+
   </p>
 </details>
 
@@ -102,7 +102,7 @@ personal user details and much more! **Current functions include**:
     - View and delete SSH keys linked to your GitHub account
 - Language statistics
   - See what your top languages are
-  
+
 
 ## Changelog
 You can view the changelog [here](https://github.com/PiotrRut/BetterGitCLI/blob/master/CHANGELOG.md).
