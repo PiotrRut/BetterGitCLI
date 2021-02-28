@@ -19,4 +19,4 @@ def success(contents):
 
 # Initialise and return a GitHub client instance
 def github():
-    return Github(os.getenv('GITHUB_AUTH_TOKEN'))
+    return Github(os.getenv("GITHUB_AUTH_TOKEN"))

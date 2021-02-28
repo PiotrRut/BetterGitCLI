@@ -14,7 +14,7 @@
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
 
 BetterGitCli is a third party GitHub CLI made with Python, providing easier access to managing your
-GitHub account directly from your shell with simple and intuitive UI. It's based on `PyGithub` which is a wrapper library around the official GitHub REST API.
+GitHub account directly from your shell with simple and intuitive UI. It's based on [PyGithub](https://pypi.org/project/PyGithub/) which is a wrapper library around the official GitHub REST API.
 
 ## Configuration
 
@@ -100,6 +100,8 @@ personal user details and much more! **Current functions include**:
     - View and edit your personal details like your name, location or bio
 - SSH keys management
     - View and delete SSH keys linked to your GitHub account
+- Language statistics
+  - See what your top languages are
   
 
 ## Changelog
