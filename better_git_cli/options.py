@@ -20,7 +20,7 @@ def start_menu():
         "message": "What would you like to do?",
         "choices": [
             {"name": "Manage existing repositories", "value": 1},
-            {"name": "Create a new repository", "value": 2},
+            {"name": "Create a new (remote) repository", "value": 2},
             {"name": "Manage my personal details", "value": 3},
             {"name": "View and delete my SSH keys", "value": 4},
             {"name": "Show my language stats", "value": 5},

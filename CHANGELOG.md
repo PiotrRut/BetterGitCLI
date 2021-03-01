@@ -1,6 +1,10 @@
 # BetterGitCLI Changelog
 
-## v1.1 (02/21)
+## v1.2.0 (03/21)
+### Changes
+- New feature: create a new repository 🎉
+
+## v1.1.0 (02/21)
 ### Changes
 - New feature: language statistics 🎉
   - Lets you see your top languages, and a  total count of each language used on your account
