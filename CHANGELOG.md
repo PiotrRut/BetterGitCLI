@@ -1,5 +1,12 @@
 # BetterGitCLI Changelog
 
+## [1.1.0](https://www.github.com/PiotrRut/BetterGitCLI/compare/v1.0.2...v1.1.0) (2021-03-01)
+
+
+### Features
+
+* Option to create new repos :sparkles: ([94b2ec3](https://www.github.com/PiotrRut/BetterGitCLI/commit/94b2ec345da8b71f043aa4a6608a3fae8af9d0a5))
+
 ## v1.1 (02/21)
 ### Changes
 - New feature: language statistics 🎉
