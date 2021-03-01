@@ -96,6 +96,7 @@ personal user details and much more! **Current functions include**:
 - Repository management
     - View and edit repository details, such as the description, default branches, visibility and more!
     - Delete repositories
+    - Create a new repository
 - User management
     - View and edit your personal details like your name, location or bio
 - SSH keys management

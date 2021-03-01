@@ -1,6 +1,7 @@
 import os
-from sys import exit
+from sys import exit, path
 
+path.append("..")
 from better_git_cli.options import start_menu
 from better_git_cli.helpers import github
 from colorama import init, Fore

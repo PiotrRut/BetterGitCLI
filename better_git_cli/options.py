@@ -8,6 +8,7 @@ from better_git_cli.repos import see_repos
 from better_git_cli.user import change_user_details
 from better_git_cli.sshkeys import manage_ssh_keys
 from better_git_cli.languages import language_stats
+from better_git_cli.new_repo import new_repo
 
 
 # Main menu of the application
@@ -18,12 +19,13 @@ def start_menu():
         "name": "main_menu",
         "message": "What would you like to do?",
         "choices": [
-            {"name": "Manage my repositories", "value": 1},
-            {"name": "Manage my personal details", "value": 2},
-            {"name": "View and delete my SSH keys", "value": 3},
-            {"name": "Show my language stats", "value": 4},
+            {"name": "Manage existing repositories", "value": 1},
+            {"name": "Create a new repository", "value": 2},
+            {"name": "Manage my personal details", "value": 3},
+            {"name": "View and delete my SSH keys", "value": 4},
+            {"name": "Show my language stats", "value": 5},
             Separator(),
-            {"name": "Exit to shell", "value": 5},
+            {"name": "Exit to shell", "value": 6},
         ],
     }
 
@@ -33,13 +35,16 @@ def start_menu():
         see_repos()
 
     if answers.get("main_menu") == 2:
-        change_user_details()
+        new_repo()
 
     if answers.get("main_menu") == 3:
-        manage_ssh_keys()
+        change_user_details()
 
     if answers.get("main_menu") == 4:
-        language_stats()
+        manage_ssh_keys()
 
     if answers.get("main_menu") == 5:
+        language_stats()
+
+    if answers.get("main_menu") == 6:
         exit("Exiting now - see you later! 👋🏼")
