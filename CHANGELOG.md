@@ -1,5 +1,12 @@
 # BetterGitCLI Changelog
 
+## [1.3.0](https://www.github.com/PiotrRut/BetterGitCLI/compare/v1.2.0...v1.3.0) (2021-03-06)
+
+
+### Features
+
+* New feature -> Create SSH keys :sparkles: ([9193844](https://www.github.com/PiotrRut/BetterGitCLI/commit/9193844ae2c76995781c4f5aeb7a540fc4522c3c))
+
 ## v1.2.0 (03/21)
 ### Changes
 - New feature: create a new repository 🎉
