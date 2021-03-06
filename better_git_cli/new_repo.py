@@ -46,7 +46,7 @@ def new_repo():
         {
             "type": "confirm",
             "name": "repo_private",
-            "message": "Do you want this repo to be private?",
+            "message": "Do you want this repository to be private?",
             "default": True,
         },
     ]

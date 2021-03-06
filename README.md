@@ -9,7 +9,6 @@
     <a href="https://pypi.org/project/bettergitcli/">
       <img src="https://img.shields.io/pypi/v/bettergitcli">
     </a>
-    <img src="https://static.pepy.tech/personalized-badge/bettergitcli?period=month&units=international_system&left_color=grey&right_color=orange&left_text=Downloads"/>
 </p>
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
@@ -101,7 +100,7 @@ personal user details and much more! **Current functions include**:
 - User management
     - View and edit your personal details like your name, location or bio
 - SSH keys management
-    - View and delete SSH keys linked to your GitHub account
+    - View, create and delete SSH keys linked to your GitHub account
 - Language statistics
   - See what your top languages are
 

@@ -36,7 +36,7 @@ def see_repos():
     if len(get_repos_as_options()):
         repo_list_answer = prompt(question)
     else:
-        print("No repositories to display")
+        error("No repositories to display")
 
     if repo_list_answer.get("repo") == 1:
         options.start_menu()
@@ -46,7 +46,7 @@ def see_repos():
 
     repo = github().get_repo(repo_list_answer.get("repo"))
 
-    # WHAT TO DO WITH CHOSE REPO
+    # WHAT TO DO WITH CHOSEN REPO
     # (at this point the user have chosen one from list)
 
     question2 = {
@@ -128,7 +128,7 @@ def see_repos():
         }
         delete_answer = prompt(warning)
         if delete_answer.get("continue") is True:
-            github().get_repo(repo.id).delete()
+            repo.delete()
             success(f"{repo.name} successfully deleted!")
 
     # Back to menu
