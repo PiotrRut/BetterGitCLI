@@ -22,7 +22,7 @@ See below for instructions on how to configure BetterGitCLI. Note that Python 3.
 
 ### GitHub access
 
-In order to gain access to your GitHub account you will need to authenticate with your GitHub access token. You can find instructions
+In order to grant access to your GitHub account you will need to authenticate with your GitHub access token. You can find instructions
 on how to obtain it [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 Your token must grant access to _"repo"_, _"user"_, _"delete_repo"_ and _"admin:public_key"_. After generating
@@ -30,7 +30,7 @@ your token, export it as an environmental variable in your shell 👇🏻
 
 ```bash
 # bash / zsh
-$ export GITHUB_AUTH_TOKEN=<token>
+$ export GITHUB_AUTH_TOKEN="token"
 
 # powershell
 $env:GITHUB_AUTH_TOKEN = "token"
@@ -110,4 +110,5 @@ You can view the changelog [here](https://github.com/PiotrRut/BetterGitCLI/blob/
 
 ## Contributing
 All contributions to add new features, fix any bugs (if you spot any) or make the code better or more efficient
-are more than welcome - please feel free to raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) or open up a pull request 💫
+are more than welcome - please raise an [issue](https://github.com/PiotrRut/BetterGitCLI/issues/new) before you open a pull request
+to make sure we're not working on the same feature/bugfix! 💫
