@@ -105,6 +105,21 @@ personal user details and much more! **Current functions include**:
   - See what your top languages are
 
 
+## Preview 📲
+
+<details>
+  <summary><i><b>Some screenshots of BetterGitCLI in action 👇</b></i></summary>
+  <p>
+
+| Main Menu | Manage personal details | Manage a specific repo |
+| ----------- | ----------- | --------- |
+| ![Main menu](https://user-images.githubusercontent.com/43642399/113417447-51793f00-93bb-11eb-9975-5e90650de90e.png) | ![Details management](https://user-images.githubusercontent.com/43642399/113417480-63f37880-93bb-11eb-8bd1-011d4dceae8b.png) | ![Screenshot 2021-04-02 at 1 55 52 pm](https://user-images.githubusercontent.com/43642399/113417501-72419480-93bb-11eb-8361-53e9a588394e.png) |
+
+
+  </p>
+</details>
+
+
 ## Changelog
 You can view the changelog [here](https://github.com/PiotrRut/BetterGitCLI/blob/master/CHANGELOG.md).
 
