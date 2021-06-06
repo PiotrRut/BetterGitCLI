@@ -9,6 +9,7 @@
     <a href="https://pypi.org/project/bettergitcli/">
       <img src="https://img.shields.io/pypi/v/bettergitcli">
     </a>
+    <img src="https://static.pepy.tech/personalized-badge/bettergitcli?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads">
 </p>
 
 > Disclaimer: BetterGitCLI is **not** official GitHub software, nor is it in any way affiliated with GitHub.
