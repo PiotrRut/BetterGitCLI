@@ -1,5 +1,15 @@
 # Changelog
 
+### [1.3.1](https://www.github.com/PiotrRut/BetterGitCLI/compare/v1.3.0...v1.3.1) (2021-06-06)
+
+
+### Documentation
+
+* Add downloads count badge ([2e8fc4e](https://www.github.com/PiotrRut/BetterGitCLI/commit/2e8fc4e0773c0dd89568fe75b7cb6cfa99452ea4))
+* Added screenshots 📸 ([aec4afd](https://www.github.com/PiotrRut/BetterGitCLI/commit/aec4afdd027661fb18e0aaa0f69af4614b5ae041))
+* Update README ([8255512](https://www.github.com/PiotrRut/BetterGitCLI/commit/8255512d393dcc104a3e6e2485cda4c495ca5026))
+* Updated docs and git workflows ([8190ad9](https://www.github.com/PiotrRut/BetterGitCLI/commit/8190ad989156dcd03573015d71274f50fb52575a))
+
 ## [1.3.0](https://www.github.com/PiotrRut/BetterGitCLI/compare/v1.2.0...v1.3.0) (2021-03-06)
 
 
